@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/baumannr5054/EventPlannerCS-358/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate"
+		},
+		{
+			"file" : "C:/Users/baumannr5054/EventPlannerCS-358/build/_deps/googletest-subbuild/CMakeFiles/e5c5d92e3a5564975e201b4144999f08/googletest-populate.rule"
+		},
+		{
+			"file" : "C:/Users/baumannr5054/EventPlannerCS-358/build/_deps/googletest-subbuild/CMakeFiles/8c417f7e32e87e0798f167052e199abf/googletest-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/baumannr5054/EventPlannerCS-358/build/_deps/googletest-subbuild/CMakeFiles/fe7b60835135e24796de375584aa04de/googletest-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/baumannr5054/EventPlannerCS-358/build/_deps/googletest-subbuild/CMakeFiles/fe7b60835135e24796de375584aa04de/googletest-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/baumannr5054/EventPlannerCS-358/build/_deps/googletest-subbuild/CMakeFiles/fe7b60835135e24796de375584aa04de/googletest-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/baumannr5054/EventPlannerCS-358/build/_deps/googletest-subbuild/CMakeFiles/fe7b60835135e24796de375584aa04de/googletest-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/baumannr5054/EventPlannerCS-358/build/_deps/googletest-subbuild/CMakeFiles/fe7b60835135e24796de375584aa04de/googletest-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/baumannr5054/EventPlannerCS-358/build/_deps/googletest-subbuild/CMakeFiles/fe7b60835135e24796de375584aa04de/googletest-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/baumannr5054/EventPlannerCS-358/build/_deps/googletest-subbuild/CMakeFiles/fe7b60835135e24796de375584aa04de/googletest-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/baumannr5054/EventPlannerCS-358/build/_deps/googletest-subbuild/CMakeFiles/fe7b60835135e24796de375584aa04de/googletest-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"googletest-populate"
+		],
+		"name" : "googletest-populate"
+	}
+}

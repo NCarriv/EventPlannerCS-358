@@ -36,11 +36,11 @@ void Event::setName(string eventName){
 
 string Event::getTag(int index){
     //valid input?
-    if (index >= 0 && tags->length() > index){
-        return tags[index];
+    if (index < 0 || tags->length() <= index){
+        return nullptr;
     }
         
-    return;
+    return tags[index];
 }
 void Event::setTag(int index, string newTag){
     //valid input?

@@ -1,0 +1,10 @@
+^C:\USERS\BAUMANNR5054\EVENTPLANNERCS-358\BUILD\CMAKEFILES\A048E62BC106D6A3A8CD7107E3C7FFCE\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/baumannr5054/EventPlannerCS-358 -BC:/Users/baumannr5054/EventPlannerCS-358/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/baumannr5054/EventPlannerCS-358/build/Project.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
