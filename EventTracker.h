@@ -1,6 +1,6 @@
 #include <vector>
 #include <iostream>
-#include "Event.cpp"
+#include "Event.h"
 
 class EventTracker {
 
@@ -20,6 +20,6 @@ public:
 
     void printEvents();
 
-    void printEvents(vector<Event> outputList); //this is for printing the results of the searches
+    void printEvents(vector<Event> outputList); //for printing results
 
 };
