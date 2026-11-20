@@ -37,7 +37,7 @@ void Event::setName(string eventName){
 string Event::getTag(int index){
     //valid input?
     if (index < 0 || tags->length() <= index){
-        return nullptr;
+        return "";
     }
         
     return tags[index];
