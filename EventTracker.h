@@ -11,6 +11,7 @@ private:
 public:
 
     void searchEventName(string eventName);
+    void compareEventID(Event a, Event b);
 
     void searchEventDate(string eventDate);
 

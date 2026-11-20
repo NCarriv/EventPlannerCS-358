@@ -1,4 +1,7 @@
 #include "EventTracker.h"
+#include <algorithm>
+
+using namespace std;
 
 void EventTracker::searchEventName(string eventName){
     
@@ -20,9 +23,13 @@ void EventTracker::searchEventName(string eventName){
         }
     }
 
-    //order based on earliest found  --TODO: not sure if this works the way I hope it does
-    
+    //order based on earliest found -- credit: copilot  TODO: make sure there's a test for this
+    sort(temp.begin(), temp.end(), compareEventID);
 
     //print temp array
     printEvents(temp);
+}
+
+void EventTracker::compareEventID(Event a, Event b){
+    a.getID() < b.getID();
 }

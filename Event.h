@@ -8,7 +8,7 @@ private:
     string name;
     string tags[5]; //can hold 5 tags
     string description; 
-    int id; 
+    int id;  //used for searching
 
     string startTime; //format of "xx:xx"
     string date; //format of "xx/xx/xxxx"
