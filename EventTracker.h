@@ -1,6 +1,6 @@
 #include <vector>
 #include <iostream>
-#include "Event.cpp"
+#include "Event.h"
 
 class EventTracker {
 
@@ -11,6 +11,7 @@ private:
 public:
 
     void searchEventName(string eventName);
+    void compareEventID(Event a, Event b);
 
     void searchEventDate(string eventDate);
 
@@ -20,6 +21,6 @@ public:
 
     void printEvents();
 
-    void printEvents(vector<Event> outputList); //this is for printing the results of the searches
+    void printEvents(vector<Event> outputList); //for printing results
 
 };
