@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20261121-1524-Experimental"
+	Name="(empty)"
+	Generator="ctest-4.4.4"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Windows"
+	Hostname="eStout-G6165CR6"
+	OSRelease="10.0.26200"
+	OSVersion="Windows 10"
+	OSPlatform="AMD64"
+	Is64Bits="1"
+	VendorString="AuthenticAMD"
+	VendorID="Advanced Micro Devices"
+	FamilyID="15"
+	ModelID="5"
+	ModelName="AMD Ryzen 5 230 w/ Radeon 760M Graphics"
+	ProcessorCacheSize="64"
+	NumberOfLogicalCPU="12"
+	NumberOfPhysicalCPU="6"
+	TotalVirtualMemory="19456"
+	TotalPhysicalMemory="15645"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="3501.000000"
+	>
+	<Testing>
+		<StartDateTime>Nov 21 10:16 Central Standard Time</StartDateTime>
+		<StartTestTime>1795277771</StartTestTime>
+		<TestList/>
+		<EndDateTime>Nov 21 10:16 Central Standard Time</EndDateTime>
+		<EndTestTime>1795277771</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

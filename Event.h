@@ -23,15 +23,19 @@ public:
     //getters and setters
     string getName();
     void setName(string eventName);
+
     string getTag(int index);
     void setTag(int index, string newTag);
+
     string getDescription();
     void setDescription(string eventDescription);
+
     int getID();
     void setID(int eventID);
 
     string getStartTime();
     void setStartTime(string time);
+    
     string getDate();
     void setDate(string eventDate);
 

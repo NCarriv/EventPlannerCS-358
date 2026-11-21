@@ -7,21 +7,24 @@ Event::Event(){
     description = "input description";
     id = 0000;
 
+    for(int i = 0; i < 5; i++){
+        tags[i] = "";
+    }
+
     startTime = "xx:xx";
     date = "xx/xx/xxxx";
 }
-Event::Event(string eventName, string eventTags[], string eventDescription, 
-    int eventID, string eventStartTime, string eventDate){
-
+Event::Event(string eventName, string eventTags[], string eventDescription,
+    int eventID, string eventStartTime, string eventDate)
+{
     name = eventName;
-        
-    for(int i=0; i < tags->length(); i++){
+
+    for (int i = 0; i < 5; i++) {
         tags[i] = eventTags[i];
     }
-        
+
     description = eventDescription;
     id = eventID;
-
     startTime = eventStartTime;
     date = eventDate;
 }
@@ -36,7 +39,7 @@ void Event::setName(string eventName){
 
 string Event::getTag(int index){
     //valid input?
-    if (index < 0 || tags->length() <= index){
+    if (index < 0 || index >= 5){
         return "";
     }
         
@@ -44,7 +47,7 @@ string Event::getTag(int index){
 }
 void Event::setTag(int index, string newTag){
     //valid input?
-    if (index >= 0 && tags->length() > index){
+    if (index >= 0 && index < 5){
         tags[index] = newTag;
     }
 }

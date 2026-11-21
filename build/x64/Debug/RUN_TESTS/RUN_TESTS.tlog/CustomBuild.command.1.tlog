@@ -1,0 +1,10 @@
+^C:\USERS\BAUMANNR5054\EVENTPLANNERCS-358\BUILD\CMAKEFILES\A048E62BC106D6A3A8CD7107E3C7FFCE\RUN_TESTS_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

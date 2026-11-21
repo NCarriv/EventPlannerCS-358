@@ -1,0 +1,27 @@
+{
+  "tests": 3,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "EventTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "HandlesCreationEmpty",
+          "file": "C:\\Users\\baumannr5054\\EventPlannerCS-358\\EventTests.cpp",
+          "line": 6
+        },
+        {
+          "name": "HandlesCreationWithParameters",
+          "file": "C:\\Users\\baumannr5054\\EventPlannerCS-358\\EventTests.cpp",
+          "line": 33
+        },
+        {
+          "name": "HandlesSetters",
+          "file": "C:\\Users\\baumannr5054\\EventPlannerCS-358\\EventTests.cpp",
+          "line": 56
+        }
+      ]
+    }
+  ]
+}

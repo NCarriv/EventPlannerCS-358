@@ -1,0 +1,5 @@
+if(EXISTS "C:/Users/baumannr5054/EventPlannerCS-358/build/unit_tests_e3b0c442_Debug_tests.cmake")
+  include("C:/Users/baumannr5054/EventPlannerCS-358/build/unit_tests_e3b0c442_Debug_tests.cmake")
+else()
+  add_test(unit_tests_NOT_BUILT unit_tests_NOT_BUILT)
+endif()
