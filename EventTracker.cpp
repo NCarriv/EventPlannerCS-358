@@ -9,7 +9,7 @@ void EventTracker::searchEventName(string eventName){
     vector<Event> temp; 
 
     //go through list, find() eventName in each event
-    for (Event event : temp){
+    for (Event event : eventList){
         //int searchIndex = event.getName().find(eventName);
         string name = event.getName();
 
