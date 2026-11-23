@@ -9,7 +9,7 @@ void EventTracker::searchEventName(string eventName){
     vector<Event> temp; 
 
     //go through list, find() eventName in each event
-    for (Event event : temp){
+    for (Event event : eventList){
         //int searchIndex = event.getName().find(eventName);
         string name = event.getName();
 
@@ -37,6 +37,23 @@ void EventTracker::compareEventID(Event a, Event b){
 }
 
 
+void EventTracker::filterEventTag(int id, string eventTag){ //TODO: do I need id as param?
+    
+    for (Event event : eventList){
+        //for each tag, compair
+
+            //add to temp array
+            
+            //add one to ID
+
+        //sort array by how many tags you have, listed in ID
+
+    }
+
+    //print temp array
+}
+
+
 void EventTracker::insertEvent(string eventName, string eventTags[5], string eventDescription,
      int eventID, string eventStartTime, string eventDate) {
 
@@ -53,11 +70,6 @@ void EventTracker::insertEvent(string eventName, string eventTags[5], string eve
     newEvent.setDate(eventDate);
     
     eventList.push_back(newEvent);
-}
-
-
-void EventTracker::filterEventTag(int id, string eventTag){
-
 }
 
 
