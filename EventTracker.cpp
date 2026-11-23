@@ -30,6 +30,7 @@ void EventTracker::searchEventName(string eventName){
     printEvents(temp);
 }
 
+//helper function
 void EventTracker::compareEventID(Event a, Event b){
     a.getID() < b.getID();
 
@@ -52,6 +53,11 @@ void EventTracker::insertEvent(string eventName, string eventTags[5], string eve
     newEvent.setDate(eventDate);
     
     eventList.push_back(newEvent);
+}
+
+
+void EventTracker::filterEventTag(int id, string eventTag){
+
 }
 
 

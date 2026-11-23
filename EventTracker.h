@@ -15,7 +15,7 @@ public:
 
     void searchEventDate(string eventDate);
 
-    void searchEventTag(int id, string eventTag);
+    void filterEventTag(int id, string eventTag);
     
     void insertEvent(string eventName, string eventTags[5], string eventDescription, int eventID, string eventStartTime, string eventDate);
 
