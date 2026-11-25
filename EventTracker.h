@@ -15,7 +15,8 @@ public:
 
     void searchEventDate(string eventDate);
 
-    void searchEventTag(int id, string eventTag);
+    void filterEventTag(string eventTag);
+    void resetID(vector<Event> usedList);
     
     void insertEvent(string eventName, string eventTags[5], string eventDescription, int eventID, string eventStartTime, string eventDate);
 

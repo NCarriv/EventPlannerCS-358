@@ -28,16 +28,62 @@ void EventTracker::searchEventName(string eventName){
 
     //print temp array
     printEvents(temp);
+
+    //reset event ids
+    resetID(temp);
 }
 
+//helper function
 void EventTracker::compareEventID(Event a, Event b){
     a.getID() < b.getID();
 
 }
 
 
+void EventTracker::filterEventTag(string eventTag){  //only filters for one tag at the moment, future feature
+    
+    //create temp array 
+    vector<Event> temp; 
+
+    for (Event event : eventList){
+        //for each tag, compair
+        for(int i = 0; i < eventList.size(); i++){
+            
+            //itterate through each event's tag list
+            for(int j = 0; j < 5; j++){
+                string tag = event.getTag(j);
+
+                if (tag._Equal(eventTag)){
+                    //add to temp array
+                    temp.push_back(event);
+
+                    //add one to ID for sorting, for future feature
+                    event.setID(event.getID() + 1);
+                }
+            }
+        }
+
+    }
+
+    //sort array by how many tags you have, listed in ID -- for future feature, I think
+
+    //print temp array
+    printEvents(temp);
+
+    //reset event ids
+    resetID(temp);
+}
+
+//helper function, reset the used IDs for the events
+void EventTracker::resetID(vector<Event> usedList){
+    for (Event event : usedList){
+        event.setID(0000);
+    }
+}
+
+
 void EventTracker::insertEvent(string eventName, string eventTags[5], string eventDescription,
-     int eventID, string eventStartTime, string eventDate) {
+    int eventID, string eventStartTime, string eventDate) {
 
     Event newEvent;
     newEvent.setName(eventName);
