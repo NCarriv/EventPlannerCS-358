@@ -1,5 +1,11 @@
 #include <gtest/gtest.h>
 #include "Event.h"
+#include "EventTracker.h"
+
+
+/*
+THIS BLOCK IS RESERVED FOR THE EVENT.H AND EVENT.CPP TESTS
+*/
 
 //this test checks to see if creating a blank event actually works
 //also checks to see if the getters return the correct values for a blank event
@@ -87,3 +93,34 @@ TEST(EventTest, HandlesSetters) {
     EXPECT_EQ(event.getTag(4), newTag);
 }
 
+
+/*
+THIS BLOCK IS RESERVED FOR THE EVENT TRACKER TESTS
+*/
+
+TEST(EventTrackerTest, HandlesInsertEvent) {
+    EventTracker tracker;
+
+    string name = "Sample Event";
+    string tags[5] = {"Tag1", "Tag2", "Tag3", "Tag4", "Tag5"};
+    string description = "This is a sample event.";
+    int id = 1001;
+    string startTime = "10:00";
+    string date = "03/03/2024";
+
+    tracker.insertEvent(name, tags, description, id, startTime, date);
+
+    // Assuming we have a method to get the event list for testing purposes
+    vector<Event> events = tracker.getEventList(); // You may need to implement this getter in EventTracker
+
+    ASSERT_EQ(events.size(), 1);
+    EXPECT_EQ(events[0].getName(), name);
+    EXPECT_EQ(events[0].getDescription(), description);
+    EXPECT_EQ(events[0].getID(), id);
+    EXPECT_EQ(events[0].getStartTime(), startTime);
+    EXPECT_EQ(events[0].getDate(), date);
+
+    for (int i = 0; i < 5; i++) {
+        EXPECT_EQ(events[0].getTag(i), tags[i]);
+    }
+}
